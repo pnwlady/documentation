@@ -14,13 +14,34 @@
       <li>Now go back to your branch to rebase (CONNECT-549 –feature-blah)</li>
         <li><i>git checkout CONNECT-549 –feature-blah </i></li>
         <li><i>git rebase –i master</i>(i=interactive)</li>
-
-      <li>Work</li>
-      <li>Git add, commit. When ready to push, checkout to master and pull any updates, check back out to your branch and rebase.</li>
-      <li>Submit pull request.</li>
-      <li>Have team member review request, approve and merge. (Reviewer/approver and merger are not the same person.)</li>
+      <li>Clean up the commit messages</li>
+        <li>Title & main commit message</li>
+          <li>rename commit to JIRA ticket ID</li>
+          <li>summarize commit in one message</li>
       <li>Everyone pull down updated master.</li>
-      <li>Delete local branch.</li>
+        <li>fixup or squash the commits</li>
+          <li><i>cw</i> to change word</li>
+          <li>remove <i>pick</i> and replace with f </li>
+          <li>hit the escape button</li>
+          <li>use j to go down to the next commit</li>
+          <li>go through i-iii again</li>
+      <li>When done push your changes</li>
+        <li><i>git push </i></li>
+        <li>If there's an error force push</li>
+          <li><i>git push –f</i></li>
     </ol>
+    <ul>
+      <label>Configure environment</label>
+      <li>Set up vim as editor: git config --global core.editor "vim"</li>
+      <li>Set up autosquash: git config --global rebase.autosquash true</li>
+
+      <label>Rebase commands:</label>
+      <li>p=pick (use commit as is)</li>
+      <li>r=reword (use commit and reword)</li>
+      <li>e=edit (use commit and edit)</li>
+      <li>s=squash (use commit but meld into previous commit)</li>
+      <li>f=fixup (use commit but discard commit message)</li>
+      <li>x=exec (run command with shell)</li>
+    </ul>
   </body>
 </html>
