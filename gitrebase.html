@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Workflow documentation for Terra</title>
+  </head>
+  <body>
+    <h3>Git Rebase</h3>
+    <ol>
+      <li>After your final commit on your branch, checkout to master and pull down any possible remote changes to your local master branch</li>
+        <li><i>git checkout master</i></li>
+        <li><i>git pull</i></li>
+      <li>Now go back to your branch to rebase (CONNECT-549 –feature-blah)</li>
+        <li><i>git checkout CONNECT-549 –feature-blah </i></li>
+        <li><i>git rebase –i master</i>(i=interactive)</li>
+
+      <li>Work</li>
+      <li>Git add, commit. When ready to push, checkout to master and pull any updates, check back out to your branch and rebase.</li>
+      <li>Submit pull request.</li>
+      <li>Have team member review request, approve and merge. (Reviewer/approver and merger are not the same person.)</li>
+      <li>Everyone pull down updated master.</li>
+      <li>Delete local branch.</li>
+    </ol>
+  </body>
+</html>
