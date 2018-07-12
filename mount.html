@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Workflow documentation for Terra</title>
+  </head>
+  <body>
+    <h3>Starting a new project</h3>
+    <ol>
+      <li>Bring up Automator and search for MountWarpships.app file. Hit Run. </li>
+      <li>If that doesn't work try running individual commands in terminal.</li>
+      <li>mount -shows which servers are mounted</li>
+      <li>--- warpships scripts ---- mounting scripts</li>
+      <li>umount ~/mnt/* &>/dev/null</li>
+      <li>Work</li>
+        <li>/usr/local/bin/sshfs coal:/home/www/connect/public_html/module/terra/template/default/controller/ ~/mnt/coal/ -o defer_permissions,reconnect,volname=coal</li>
+        <li>#/usr/local/bin/sshfs spidercliff:/home/www/terrastaffinggroup.com/ ~/mnt/spidercliff/ -o defer_permissions,reconnect,volname=spidercliff</li>
+        <li>/usr/local/bin/sshfs spidercliff:/home/www/terrastaffinggroup.com/myaccount/dev_html/ ~/mnt/myaccount/ -o defer_permissions,reconnect,volname=myaccount</li>
+      <li>Everyone pull down updated master.</li>
+      <li>Delete local branch.</li>
+    </ol>
+  </body>
+</html>

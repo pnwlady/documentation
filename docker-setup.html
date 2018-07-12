@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Workflow documentation for Terra</title>
+  </head>
+  <body>
+    <h3>Starting a new project</h3>
+    <ol>
+      <li>Open a JIRA ticket</li>
+      <li>Document requirements in ticket or confluence if verbose.</li>
+      <li>Create branch from JIRA ticket by type (bug, feature, etc).
+          <li>If multiple people are working on the same branch create sub-branches with consistent naming convention with the goal of merging them into feature branch.</li>
+      </li>
+      <li>Fetch and checkout into that branch.</li>
+      <li>Work</li>
+      <li>Git add, commit. When ready to push, checkout to master and pull any updates, check back out to your branch and rebase.</li>
+      <li>Submit pull request.</li>
+      <li>Have team member review request, approve and merge. (Reviewer/approver and merger are not the same person.)</li>
+      <li>Everyone pull down updated master.</li>
+      <li>Delete local branch.</li>
+    </ol>
+  </body>
+</html>
